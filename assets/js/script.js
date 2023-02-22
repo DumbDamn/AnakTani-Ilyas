@@ -11,12 +11,21 @@ document.addEventListener('scroll', () =>{
 
 // Menu Active
 const navbar = document.querySelector('.navbar-menu');
-const menu = document.querySelector('.fa-bars');
+const hamburgerMenu = document.querySelector('.fa-bars');
 
 document.querySelector('#hamburger-menu').onclick = () => {
   navbar.classList.toggle('active');
-  menu.classList.toggle('active');
+  hamburgerMenu.classList.toggle('active');
 };
+
+document.addEventListener('click', function(e){
+  if (!hamburgerMenu.contains(e.target) && !navbar.contains(e.target)){
+    navbar.classList.remove('active');
+    hamburgerMenu.classList.remove('active');
+  }
+})
+
+
 
 // Scroll Item
 document.addEventListener('scroll', reveal);

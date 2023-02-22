@@ -406,16 +406,17 @@ footer .footer-menu a:hover{
 /* Laptop */
 @media (max-width: 1366px){
   html{
-    font-size: 75%;
+    font-size: 80%;
   }
 }
 
 /* Tablet */
 @media (max-width: 768px){
   html{
-    font-size: 60%;
+    font-size: 70%;
   }
   
+  /* Navbar Tablet */
   .navbar .navbar-menu{
     position: absolute;
     right: -100%;
@@ -453,6 +454,7 @@ footer .footer-menu a:hover{
     background-color: var(--primary);
   }
 
+  /* About Tablet */
   .about .row {
     flex-direction: column;
     margin: auto;
@@ -476,6 +478,11 @@ footer .footer-menu a:hover{
     text-align: center;
   }
 
+  .about .row .about-content p{
+    text-align: center;
+  }
+
+  /* Contact Tablet */
   .contact .container-contact .contact-row {
     flex-wrap: wrap;
   }
@@ -499,6 +506,6 @@ footer .footer-menu a:hover{
 /* Mobile Phone */
 @media (max-width: 450px){
   html{
-    font-size: 50%;
+    font-size: 60%;
   }
 }
